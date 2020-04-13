@@ -196,7 +196,8 @@ setup(
         'Framework :: Django :: 2.1',
         'Framework :: Django :: 2.2',
     ],
-    extras_require = {
+    install_requires=['six'],
+    extras_require={
         'dev': ['tox', 'jasmine'],
         'devdb': ['psycopg2', 'mysqlclient'],
         'i18n': ['unidecode'],
